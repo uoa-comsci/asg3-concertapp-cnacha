@@ -1,0 +1,49 @@
+{
+  "tests": [
+   {
+      "name": "test resources",
+      "setup": "",
+      "run": "mvn -B -Dit.test=ConcertResourceIT verify --file pom.xml",
+      "input": "",
+      "output": "",
+      "timeout": 10,
+      "points": 24
+    },
+    {
+      "name": "test subscription1",
+      "setup": "",
+      "run": "mvn -B -Dit.test=ConcertSubscriptionIT#testSubscription verify --file pom.xml",
+      "input": "",
+      "output": "",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "test subscription2",
+      "setup": "",
+      "run": "mvn -B -Dit.test=ConcertSubscriptionIT#testSubscriptionForDifferentConcert verify --file pom.xml",
+      "input": "",
+      "output": "",
+      "timeout": 10,
+      "points": 4
+    },
+    {
+      "name": "test subscription3",
+      "setup": "",
+      "run": "mvn -B -Dit.test=ConcertSubscriptionIT#testUnauthorizedSubscription verify --file pom.xml",
+      "input": "",
+      "output": "",
+      "timeout": 10,
+      "points": 2
+    },
+    {
+      "name": "test subscription4",
+      "setup": "",
+      "run": "mvn -B -Dit.test=ConcertSubscriptionIT#testBadSubscription_NonexistentConcert verify --file pom.xml",
+      "input": "",
+      "output": "",
+      "timeout": 10,
+      "points": 2
+    }
+  ]
+}
