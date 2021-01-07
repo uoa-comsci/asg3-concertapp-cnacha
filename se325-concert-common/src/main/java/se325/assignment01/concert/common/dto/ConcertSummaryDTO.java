@@ -1,12 +1,5 @@
 package se325.assignment01.concert.common.dto;
 
-/**
- * Represents a small portion of the information about a concert. Intended to be used when not all info is requred.
- *
- * id         the concert's id
- * title      the concert's title
- * imageName  the concert's image name
- */
 public class ConcertSummaryDTO {
 
     private Long id;

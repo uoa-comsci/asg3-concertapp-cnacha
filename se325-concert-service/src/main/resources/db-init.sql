@@ -1,4 +1,3 @@
-// Data in this class is required by the unit tests. DO NOT MODIFY THIS FILE.
 // Users
 INSERT INTO USERS (ID, USERNAME, PASSWORD, VERSION) VALUES (1, 'testuser', 'pa55word', 1);
 INSERT INTO USERS (ID, USERNAME, PASSWORD, VERSION) VALUES (2, 'testuser2', 'pa55word', 1);

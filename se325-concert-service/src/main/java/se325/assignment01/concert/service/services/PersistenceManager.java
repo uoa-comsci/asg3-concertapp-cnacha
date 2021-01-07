@@ -13,8 +13,6 @@ import javax.persistence.Persistence;
  * When a Web service application component (e.g. a resource object) requires a
  * persistence context, it should call the PersistentManager's
  * createEntityManager() method to acquire one.
- * <p>
- * This class is complete - you do not need to modify it.
  */
 public class PersistenceManager {
     private static PersistenceManager _instance = null;

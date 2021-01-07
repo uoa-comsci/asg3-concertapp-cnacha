@@ -8,10 +8,6 @@ import se325.assignment01.concert.service.util.ConcertUtils;
 import java.util.HashSet;
 import java.util.Set;
 
-/**
- * This is the Application class for the concert service. This class is complete - you should not need to modify it
- * (but will not be deducted marks if you decide you need to do so).
- */
 @ApplicationPath("/services")
 public class ConcertApplication extends Application {
 

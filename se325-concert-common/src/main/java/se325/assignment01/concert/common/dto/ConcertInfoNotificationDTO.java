@@ -1,9 +1,5 @@
 package se325.assignment01.concert.common.dto;
 
-/**
- * Represents a notification from the web service regarding the number of seats remaining in a concert on a date.
- * numSeatsRemaining   the number of seats remaining, matching the original subscription request.
- */
 public class ConcertInfoNotificationDTO {
 
     private int numSeatsRemaining;

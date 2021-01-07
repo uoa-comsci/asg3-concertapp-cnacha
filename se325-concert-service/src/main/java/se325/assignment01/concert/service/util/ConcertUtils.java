@@ -21,6 +21,7 @@ public class ConcertUtils {
     /**
      * This method will clear all seat and booking data from the database. Then, it will create all Seat objects for
      * all concerts and dates.
+     * TODO Refactor so it's not so obvious that seats have to be entities.
      */
     public static void initConcerts() {
         LOGGER.debug("initConcerts(): Creating the Application");

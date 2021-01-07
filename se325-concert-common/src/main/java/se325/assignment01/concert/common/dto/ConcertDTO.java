@@ -1,5 +1,10 @@
 package se325.assignment01.concert.common.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import se325.assignment01.concert.common.jackson.LocalDateTimeDeserializer;
+import se325.assignment01.concert.common.jackson.LocalDateTimeSerializer;
+
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,8 +17,7 @@ import java.util.List;
  * title        the concert's title.
  * dates        the concert's scheduled dates and times (represented as a Set of LocalDateTime instances).
  * imageName    an image name for the concert.
- * performers   the performers in the concert
- * blurb        the concert's description
+ * performers   The performers in the concert
  */
 public class ConcertDTO {
 
@@ -71,6 +75,8 @@ public class ConcertDTO {
         this.blurb = blurb;
     }
 
+    @JsonSerialize(contentUsing = LocalDateTimeSerializer.class)
+    @JsonDeserialize(contentUsing = LocalDateTimeDeserializer.class)
     public List<LocalDateTime> getDates() {
         return dates;
     }

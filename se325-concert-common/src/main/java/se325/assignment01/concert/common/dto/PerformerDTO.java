@@ -1,8 +1,13 @@
 package se325.assignment01.concert.common.dto;
 
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+
+import se325.assignment01.concert.common.types.Genre;
+
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
-import se325.assignment01.concert.common.types.Genre;
 
 /**
  * DTO class to represent performers.
@@ -12,7 +17,8 @@ import se325.assignment01.concert.common.types.Genre;
  * name       the performer's name.
  * imageName  the name of an image file for the performer.
  * genre      the performer's genre.
- * blurb      the performer's description.
+ * _concertIds identification of each concert in which the performer is
+ * playing.
  */
 public class PerformerDTO implements Comparable<PerformerDTO> {
 
