@@ -9,7 +9,7 @@
     <artifactId>assignment-01-concert-common</artifactId>
 
     <properties>
-        <jackson.version>2.10.5</jackson.version>
+        <jackson.version>2.12.7.1</jackson.version>
     </properties>
 
     <dependencies>
